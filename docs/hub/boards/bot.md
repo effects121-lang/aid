@@ -41,7 +41,6 @@ PD; правки в нём — через PR PD, инженер бота — р�
 |---|---|---|---|
 | AID-BOT-1 | Все | Переход на оркестрацию: имена, группа, работа из своей папки | в работе |
 | AID-BOT-2 | Hub | Путь к этой доске в поле `board` роли `bot-engineer` в `owners.json` — [#99](https://github.com/RickOBrian/aid/issues/99) | ждёт PD |
-| AID-BOT-4 | Bot | Опрос сервера Library Updater: события → Telegram, `/link` — по решению в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105); код готов, ключ получен 2026-10-08 | в работе: деплой |
 | AID-BOT-5 | Bot | Уведомления о задачах между Штабами — [#136](https://github.com/RickOBrian/aid/issues/136), контракт [#137](https://github.com/RickOBrian/aid/pull/137); срок 15.10 | в работе; ждёт PD: правки #137 |
 | AID-BOT-6 | Bot | Пилот «плагин в боте всегда актуальный» — контракт [#71](https://github.com/RickOBrian/aid/pull/71) одобрен | ждёт PD: мерж #71 |
 
@@ -68,4 +67,5 @@ _Пока списков нет._
 
 | ID | Чат | Что | Итог |
 |---|---|---|---|
+| AID-BOT-4 | Bot | Опрос сервера Library Updater, `/link` | бот опрашивает с 2026-10-08, сообщено в [#98](https://github.com/RickOBrian/aid/issues/98) |
 | AID-BOT-3 | Bot | Ответ Штабу LU по этапу 7 плагина | решение в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) |
