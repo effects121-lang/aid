@@ -41,7 +41,9 @@ PD; правки в нём — через PR PD, инженер бота — р�
 |---|---|---|---|
 | AID-BOT-1 | Все | Переход на оркестрацию: имена, группа, работа из своей папки | в работе |
 | AID-BOT-2 | Hub | Путь к этой доске в поле `board` роли `bot-engineer` в `owners.json` — [#99](https://github.com/RickOBrian/aid/issues/99) | ждёт PD |
-| AID-BOT-4 | Bot | Опрос бэкенда предложений LU и уведомления в Telegram — по решению в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) | ждёт Штаб LU (endpoint, схема, ключ) |
+| AID-BOT-4 | Bot | Опрос сервера Library Updater: события → Telegram, `/link` — по решению в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105); код готов, ключ получен 2026-10-08 | в работе: деплой |
+| AID-BOT-5 | Bot | Уведомления о задачах между Штабами — [#136](https://github.com/RickOBrian/aid/issues/136), контракт [#137](https://github.com/RickOBrian/aid/pull/137); срок 15.10 | в работе; ждёт PD: правки #137 |
+| AID-BOT-6 | Bot | Пилот «плагин в боте всегда актуальный» — контракт [#71](https://github.com/RickOBrian/aid/pull/71) одобрен | ждёт PD: мерж #71 |
 
 ## Вопросы инженера
 
@@ -57,6 +59,10 @@ _Пока списков нет._
 | Дата | Задача | Кому | Решение (дословно) |
 |---|---|---|---|
 | 2026-10-06 | AID-BOT-3 | Штаб LU, [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) | «Бэкенд у LU, бот опрашивает» |
+| 2026-10-08 | AID-BOT-5 | Штаб PD, [#136](https://github.com/RickOBrian/aid/issues/136#issuecomment-6058736073) | «Беру, до 15.10» |
+| 2026-10-08 | AID-BOT-5 | Штаб PD, [#136](https://github.com/RickOBrian/aid/issues/136#issuecomment-6058736073) | «Опрос GitHub раз в 30 с» |
+| 2026-10-08 | AID-BOT-5, AID-BOT-6 | Штаб PD, [#137](https://github.com/RickOBrian/aid/pull/137), [#71](https://github.com/RickOBrian/aid/pull/71) | «#71 Approve, #137 замечания» |
+| 2026-10-08 | AID-BOT-4 | Bot | «Лиду (ADMIN_ID)» — кому слать события LU для владельцев библиотек |
 
 ## Закрыто
 
