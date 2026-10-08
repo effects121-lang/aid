@@ -17,12 +17,16 @@
 
 | Чат | Папка | Что правит | Вход в контекст |
 |---|---|---|---|
-| AID · Hub · Штаб | `~/Projects/aid-hub` | `docs/hub/boards/bot.md` | `docs/hub/ORCHESTRATION.md` → эта доска |
+| AID · Hub · Штаб | `~/Projects/aid-hub`, клон форка `effects121-lang/aid` (`upstream` — `RickOBrian/aid`) | `docs/hub/boards/bot.md` | `docs/hub/ORCHESTRATION.md` → эта доска |
 | AID · Bot · Request | `~/Projects/aid-bot-request`, клон репозитория бота | весь репозиторий бота | его `CLAUDE.md` → `BOT-OVERVIEW.md` |
 
 Код бота — во внешнем приватном репозитории `effects121-lang/ds-request-bot`.
 Контракт бота с продуктами AID — `tools/aid-bot/` в этом репозитории, ведёт
 PD; правки в нём — через PR PD, инженер бота — ревьюер.
+
+Права записи в `RickOBrian/aid` у инженера нет: доска уходит PR из форка
+(`../ORCHESTRATION.md` §9 «Доски Штабов из форка»), ветка — от свежего
+`upstream/main`, в PR — только этот файл.
 
 ## Источники для `/plan`
 
@@ -33,14 +37,19 @@ PD; правки в нём — через PR PD, инженер бота — р�
   `hub`, где в тексте упомянут бот, пока метку не поставили;
 - открытые вопросы контракта: `tools/aid-bot/OPEN-QUESTIONS.md` на
   `origin/main`;
-- PR и CI бота: `gh pr list --repo effects121-lang/ds-request-bot --state open`.
+- PR и CI бота: `gh pr list --repo effects121-lang/ds-request-bot --state open`;
+- задачи мне — пункт 8 скилла с логином `effects121-lang`.
+
+Утренний сбор — задача по расписанию в Claude Desktop у инженера: будни,
+9:00, Europe/Moscow, фаза 1 `/plan`, только чтение, итог — сообщением в
+этот Штаб. При выключенном компьютере запуск переносится на следующее
+открытие приложения.
 
 ## Активные
 
 | ID | Чат | Задача | Статус |
 |---|---|---|---|
-| AID-BOT-1 | Все | Переход на оркестрацию: имена, группа, работа из своей папки | в работе |
-| AID-BOT-2 | Hub | Путь к этой доске в поле `board` роли `bot-engineer` в `owners.json` — [#99](https://github.com/RickOBrian/aid/issues/99) | ждёт PD |
+| AID-BOT-1 | Все | Переход на оркестрацию по `kit/SETUP.md` §5: папки `~/Projects/aid-hub` и `~/Projects/aid-bot-request`, оба чата в группе «AID», Штаб закреплён, утренний `/plan` по расписанию | ждёт инженера |
 | AID-BOT-4 | Bot | Опрос бэкенда предложений LU и уведомления в Telegram — по решению в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) | ждёт Штаб LU (endpoint, схема, ключ) |
 
 ## Вопросы инженера
@@ -56,10 +65,12 @@ _Пока списков нет._
 
 | Дата | Задача | Кому | Решение (дословно) |
 |---|---|---|---|
+| 2026-10-08 | AID-BOT-1 | Штаб | Ответы на вопросы настройки (`kit/SETUP.md` §2): «код задач BOT, репозиторий RickOBrian/aid (публичный) плюс effects121-lang/ds-request-bot (приватный). нужны эти 2 да 3 ла 4 да 5 да 6 да 7 да»; на план чатов и папок — «да» |
 | 2026-10-06 | AID-BOT-3 | Штаб LU, [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) | «Бэкенд у LU, бот опрашивает» |
 
 ## Закрыто
 
 | ID | Чат | Что | Итог |
 |---|---|---|---|
+| AID-BOT-2 | Hub | Путь к этой доске в `owners.json` — [#99](https://github.com/RickOBrian/aid/issues/99) | на `main`: `"board": "docs/hub/boards/bot.md"` у `effects121-lang` |
 | AID-BOT-3 | Bot | Ответ Штабу LU по этапу 7 плагина | решение в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) |
