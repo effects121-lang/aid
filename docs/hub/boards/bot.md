@@ -40,7 +40,8 @@ PD; правки в нём — через PR PD, инженер бота — р�
 | ID | Чат | Задача | Статус |
 |---|---|---|---|
 | AID-BOT-5 | Bot | AID-12 Штаба PD — уведомления в Telegram о задачах между Штабами (ADR-042, `../ORCHESTRATION.md` §9): опрос GitHub вместо webhook ([#136](https://github.com/RickOBrian/aid/issues/136)), контракт уведомлений [#137](https://github.com/RickOBrian/aid/pull/137) v0.2.0, срок 15.10. 2026-10-08: Request changes в #137 — R3 при закрытии issue, R7 в задачах без метки `hub`, ответ `/start` посторонним, разбор комментариев через issue | ждёт PD: v0.3.0 по ревью #137 |
-| AID-BOT-6 | Bot | AID-6 Штаба PD — пилот «плагин в боте всегда актуальный»: контракт `tools/aid-bot/contracts/plugin-release.md` ([#71](https://github.com/RickOBrian/aid/pull/71)) смержен 2026-10-08 | в работе — реализация в боте |
+| AID-BOT-6 | Bot | AID-6 Штаба PD — пилот «плагин в боте всегда актуальный»: контракт `tools/aid-bot/contracts/plugin-release.md` ([#71](https://github.com/RickOBrian/aid/pull/71)) смержен 2026-10-08. Код — PR #4 в репозитории бота, с правками ревью из AID-BOT-7 | ждёт AID-BOT-7, затем мерж и проверка §8 |
+| AID-BOT-7 | Hub | Контракт `plugin-release.md` v0.2.0 по ревью чата Bot · Request: поле разового алерта стыка, порог сбоев по времени (6 ч), тег не `vX.Y.Z` — сбой стыка, дата по МСК, `.gitignore` → `plugin/`, ссылка вместо алерта без файла, лимит 50 МБ, разметка заметок, Latest в `PLAN.md` — issue PD | ждёт PD |
 
 ## Вопросы инженера
 
