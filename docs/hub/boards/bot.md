@@ -39,7 +39,6 @@ PD; правки в нём — через PR PD, инженер бота — р�
 
 | ID | Чат | Задача | Статус |
 |---|---|---|---|
-| AID-BOT-4 | Bot | Опрос бэкенда предложений LU и уведомления в Telegram — по решению в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) | ждёт Штаб LU (endpoint, схема, ключ) |
 | AID-BOT-5 | Bot | AID-12 Штаба PD — уведомления в Telegram о задачах между Штабами (ADR-042, `../ORCHESTRATION.md` §9): опрос GitHub вместо webhook ([#136](https://github.com/RickOBrian/aid/issues/136)), контракт уведомлений [#137](https://github.com/RickOBrian/aid/pull/137) v0.2.0, срок 15.10. 2026-10-08: Request changes в #137 — R3 при закрытии issue, R7 в задачах без метки `hub`, ответ `/start` посторонним, разбор комментариев через issue | ждёт PD: v0.3.0 по ревью #137 |
 | AID-BOT-6 | Bot | AID-6 Штаба PD — пилот «плагин в боте всегда актуальный»: контракт `tools/aid-bot/contracts/plugin-release.md` ([#71](https://github.com/RickOBrian/aid/pull/71)) смержен 2026-10-08 | в работе — реализация в боте |
 
@@ -65,3 +64,4 @@ _Пока списков нет._
 | AID-BOT-3 | Bot | Ответ Штабу LU по этапу 7 плагина | решение в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) |
 | AID-BOT-1 | Все | Переход на оркестрацию: имена, группа, работа из своей папки | 2026-10-06: папка сменена (`BOARD.md`, AID-1 · Bot) |
 | AID-BOT-2 | Hub | Путь к доске в `owners.json` → `board` ([#99](https://github.com/RickOBrian/aid/issues/99)) | 2026-10-08: [#100](https://github.com/RickOBrian/aid/pull/100) смержен, путь вписан в `owners.json` |
+| AID-BOT-4 | Bot | Опрос бэкенда предложений LU и уведомления в Telegram — по решению в [#98](https://github.com/RickOBrian/aid/issues/98#issuecomment-6016709105) | 2026-10-08: реализовано в репозитории бота, PR #2 «События Library Updater в Telegram и /link» смержен |
